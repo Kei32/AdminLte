@@ -1,5 +1,4 @@
 module.exports = function (io,route) {
-
 	io.of(route).on('connection', function (socket) {
 	  socket.emit('message', { message: 'welcome to the chat2' });
 	  socket.on('send', function (data) {
@@ -7,5 +6,4 @@ module.exports = function (io,route) {
 	    io.of('/chanel_1').emit('message', data);
 	  });
 	});
-
 };
