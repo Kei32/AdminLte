@@ -1,0 +1,33 @@
+doctype html
+html
+ head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title AdminLTE 2 | Lockscreen
+  meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+  link(rel='stylesheet', href='/addon/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css')
+  link(rel='stylesheet', href='/css/AdminLTE.min.css')
+ body.hold-transition.lockscreen
+  .lockscreen-wrapper
+   .lockscreen-logo
+    a(href='../../index2.html')
+     b Admin
+     | LTE
+   .lockscreen-name John Doe
+   .lockscreen-item
+    .lockscreen-image
+     img(src='/img/user1-128x128.jpg', alt='User Image')
+    form.lockscreen-credentials
+     .input-group
+      input.form-control(type='password', placeholder='password')
+      .input-group-btn
+       button.btn(type='button')
+        i.fa.fa-arrow-right.text-muted
+   .help-block.text-center
+    | Enter your password to retrieve your session
+   .text-center
+    a(href='login.html') Or sign in as a different user
+  script(src='/addon/jquery/jquery-2.2.3.min.js')
+  script(src='/addon/bootstrap/js/bootstrap.min.js')
